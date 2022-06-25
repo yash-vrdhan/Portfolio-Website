@@ -1,0 +1,59 @@
+.title-text{
+    font: normal bold 50px/72px var(--roboto);
+}
+
+.text-uppercase{
+    transform: uppercase;
+}
+
+/*button*/
+.button{
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px transparent;
+    border-radius: 4px;
+}
+
+.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: .8s ease;
+    box-shadow: var(--box-shadow);
+}
+.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+    
+}
+.primary-button::after, .secondary-button::after{
+    position: absolute;
+    top: -2px;bottom: -2px;
+    left: -2px;right: -2px;
+    background: var(--gradient-color);
+    content: ' ';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.secondary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+.secondary-button:hover{
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+p.para{
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto);
+}
+
+.font-roboto{
+    font-family: var(--roboto)
+}
