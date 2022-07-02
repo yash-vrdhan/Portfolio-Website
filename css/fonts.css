@@ -4,3 +4,13 @@
     font-family: "Roboto";
     src: '../fonts/Roboto/Roboto-Regular.ttf';
 }
+
+@font-face {
+    font-family: "prompt";
+    src: url(../fonts/prompt/Prompt-Regular.ttf);
+}
+
+@font-face {
+    font-family: "prompt-head";
+    src: url(../fonts/prompt/Prompt-Black.ttf);
+}

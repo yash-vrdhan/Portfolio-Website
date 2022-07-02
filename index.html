@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Website</title>
 
     <!-- Bootstrap Css File-->
@@ -19,43 +19,43 @@
 
     <!--########################### start of Header ##########################-->
     <header class="header_area">
-        <div class="main-menu">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="me-auto"></div>
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <div class="main-menu">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <div class="mr-auto"></div>
+                  <ul class="navbar-nav">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                          <a class="nav-link" href="#">about</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                          <a class="nav-link" href="#">services</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                          <a class="nav-link" href="#">portfolio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
+                          <a class="nav-link" href="#">pages</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                          <a class="nav-link" href="#">blog</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                          <a class="nav-link" href="#">contact</a>
                       </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </div>
-    </header>
+
+                  </ul>
+              </div>
+          </nav>
+      </div>
+     </header>
     <!--########################### END of Header ############################-->
 
     <!-- ########################## Start of main ############################-->
@@ -66,11 +66,32 @@
           <div class="row">
             <div class="col-lg-6 col-md-12 site-title">
               <h3 class="title-text">Hey</h3>
-              <h1 class="tile-text text-uppercase">I am Yash!</h1>
+              <h2 class="title-text text-uppercase">I am Yash!</h2>
               <h4 class="title-text text-uppercase"> Front End Web Developer </h4>
               <div class="site-button">
                 <div class="d-flex flex-row flex wrap">
-                  <button type="button" class="btn button primary-button mr-4 text-uppercase">Hire Me</button>
+                  <button type="button" class="btn btn button primary-button mr-4 text-uppercase" data-toggle="modal" data-target="#exampleModalCenter">Hire Me</button>
+                  <!--############# modal start ##############-->
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title font-prompt text-uppercase" id="exampleModalLongTitle">Hire Me</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="para card-text py-4 px-3"> I am glad that you liked my work! For hiring me please mail me at yashs3326@gmail.com. I will mail you back within 24 Hours.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn  secondary-button " data-dismiss="modal">Close</button>
+                          <button type="button" class="btn primary-button text-uppercase">  SEND MAIL </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ################ Modal End #############-->
                   <button type="button" class="btn button secondary-button text-uppercase"> Get CV </button>
                 </div>
               </div>
@@ -93,7 +114,7 @@
               </div>
             </div>
             <div class="col-lg-6 col-md-12 about-title">
-              <h2 class="text-uppercase pt-5 " >
+              <h2 class="text-uppercase pt-5" >
                 <span>Let me</span>
                 <span>introduce</span>
                 <span>myself</span>
@@ -106,7 +127,46 @@
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id aperiam officia incidunt ratione vel, numquam tempora recusandae veniam qui magnam sapiente alias deleniti quae nostrum ullam minus assumenda necessitatibus voluptatum hic. Unde aliquam minus autem! Voluptate vel, harum accusantium quas voluptas, labore esse voluptatibus praesentium quis id quisquam, dolor fugit!
                 </p>
               </div>
-              <button type="button" class="btn button primary-button text-uppercase"> download cv </button>
+              <button type="button" class="btn button primary-button text-uppercase" data-toggle= "modal" data-target="#exampleModal"> download cv </button>
+              <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"> Information Form </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">Who are you?</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Employer</option>
+                              <option>Owner</option>
+                              <option>Employee</option>
+                              <option>Student</option>
+                              <option>Others (specify) </option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Specify (if others) </label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn secondary-button" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn primary-button">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
@@ -164,8 +224,8 @@
                 <div class="d-flex flex-row flex-wrap call-area">
                   <span><i class="fa-solid fa-phone fa-3x px-3"></i></span>
                   <div class="call-now">
-                    <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
-                    <span class="font-roboto py2">(+91)-956-562-3901</span>
+                    <a href="#" class="text-uppercase h2 font-prompt">Call Now</a>
+                    <span class="font-prompt py2">(+91)-956-562-3901</span>
                   </div>
                 </div>
                 <div class="bg-panel"></div>
@@ -244,8 +304,53 @@
         </div>
       </section>
       <!-- #################### Services Area ###############################-->
+      <!-- News letter area-->
+      <section class="subscription bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="subscription-wrapper">
+                <div class="d-flex subscription-content justify-content-between align-items-center flex-column flex-md-row text-center text-md-left">
+                  <h3 class="flex-fill">Subscribe <br> to our newsletter</h3>
+                  <form action="#" class="row flex-fill">
+                    <div class="col-lg-7 my-md-2 my-2">
+                      <input type="email" class="form-control px-4 border-0 w-100 text-center text-md-left" id="email" placeholder="Your Email" name="email">
+                    </div>
+                    <div class="col-lg-5 my-md-2 my-2">
+                      <button type="button" class="btn x-button primary-button btn-lg border-0 w-100">Subscribe Now</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end News letter area-->
     </main>
     <!-- ##########################  END of main ############################-->
+    <footer class="footer-area">
+      <div class="container">
+          <div class="">
+              <div class="site-logo text-center">
+                  <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+              </div>
+              <div class="social text-center">
+                  <h5 class="text-uppercase py-2">Follow me</h5>
+                  <a href="#"><i class="fab fa-facebook fa-3x px-4"></i></a>
+                  <a href="#"><i class="fab fa-instagram fa-3x px-4"></i></a>
+                  <a href="#"><i class="fab fa-youtube fa-3x px-4"></i></a>
+                  <a href="#"><i class="fab fa-twitter fa-3x px-4"></i></a>
+              </div>
+              <div class="copyrights text-center">
+                  <p class="para">
+                      Copyright ©2022 All rights reserved | This template is made with by
+                      <a href="#"><span style="color: var(--primary-color);">Fab Five</span></a>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
     
 
     <!--Jquery js file -->

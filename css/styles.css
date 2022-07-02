@@ -8,7 +8,11 @@
 /* start Navigation */
 
 .navbar-brand{
-    padding: 0 2rem 0 5rem;
+    padding: 1rem 2rem;
+}
+.navbar-brand img{
+    width: 12rem;
+    height: auto;
 }
 
 .navbar{
@@ -16,7 +20,7 @@
 }
 
 .nav-link{
-    font-family: var(--roboto);
+    font-family: var(--prompt);
     text-transform: uppercase;
     font-weight: 500;
     padding: 1.7rem;
@@ -49,19 +53,21 @@
 
 .site-title h3{
     padding-top: 35%;
-    font-weight: 500;
+    color: var(--tittle-color);
 }
 
-.site-title h1{
+.site-title h2{
     font-size: 5rem;
+    color: var(--tittle-color);
 }
 
 .site-title h4{
     font-size: 1.5rem;
+    color: var(--tittle-color);
 }
 
 .site-main .site-banner .banner-image>img{
-    padding: 7rem 0rem;
+    padding: 6rem 0rem;
     width: 90rem;
 }
 
@@ -74,7 +80,7 @@
 }
 .about-title h2>span{
     display: block;
-    font: normal bold 49px/60px var(--roboto);
+    font: normal bold 49px/60px var(--prompt);
     letter-spacing: 18px;
 }
 .paragraph>p{
@@ -151,8 +157,8 @@
     z-index: 2
 }
 .years-area h2>span{
-    font: normal 600 40px/30px var(--roboto);
-    padding: 5px 0px;
+    font: normal 600 50px/30px var(--prompt);
+    padding: 6px 0px;
 
 }
 
@@ -185,3 +191,72 @@
     box-shadow: var(--box-shadow);
 }
 /* services area */
+
+.site-logo img{
+    width: 12rem;
+    height: auto;
+}
+
+/* news letter */
+
+.subscription.bg-white {
+    background: none;
+}
+.bg-white {
+    background-color: #fff!important;
+}
+.subscription.bg-white .subscription-wrapper {
+    background: #fff;
+}
+.subscription-wrapper{
+    border-radius: 0% 5% 10% 3%/10% 20% 0% 17%;
+}
+.subscription-wrapper {
+    box-shadow: var(--box-shadow)!important;
+    -webkit-transform: perspective(1800px) rotateY(20deg) skewY(1deg) translateX(50px);
+    transform: perspective(1800px) rotateY(20deg) skewY(1deg) translateX(50px);
+    padding: 70px 50px;
+    z-index: 1;
+    width: 100%;
+    background: var(--gradient-color);
+    position: relative;
+    bottom: 30px;
+}
+.subscription-content {
+    -webkit-transform: skewY(-1deg);
+    transform: skewY(-1deg);
+}
+.flex-fill {
+    -ms-flex: 1 1 auto!important;
+    flex: 1 1 auto!important;
+}
+.subscription.bg-white .form-control {
+    border: 1px solid #ebebeb !important;
+}
+.form-control {
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 45px;
+}
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.1);
+    outline: 0;
+    box-shadow: none;
+}
+.btn-primary {
+    border: 0;
+    color: #fff;
+}
+.x-button {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    padding: 18px 45px;
+    border-radius: 45px;
+    font-weight: 500;
+    border: 1px solid;
+    position: relative;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+}

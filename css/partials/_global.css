@@ -1,5 +1,5 @@
 .title-text{
-    font: normal bold 50px/72px var(--roboto);
+    font: normal bold 50px/72px var(--prompt-head);
 }
 
 .text-uppercase{
@@ -9,7 +9,8 @@
 /*button*/
 .button{
     padding: .8rem 2.2rem;
-    font: normal 500 16px/20px var(--roboto);
+    font: normal 500 16px/20px var(--prompt);
+    letter-spacing: 2px;
     position: relative;
     border: 3px transparent;
     border-radius: 4px;
@@ -51,7 +52,7 @@
 
 p.para{
     color: var(--text-color);
-    font: normal 500 16px/25px var(--roboto);
+    font: normal 500 16px/25px var(--prompt);
 }
 
 .font-roboto{
